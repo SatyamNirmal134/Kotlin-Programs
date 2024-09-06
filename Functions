@@ -1,0 +1,38 @@
+open class Car(val make: String, val model: String, val year: Int, var mileage: Double) {
+    open fun details() {
+        println("Made in $make")
+        println("Model: $model")
+        println("Year: $year")
+        println("Mileage: $mileage")
+    }
+
+    fun drive(miles: Double) {
+        mileage += miles
+    }
+}
+
+class ElectricCar(
+    make: String,
+    model: String,
+    year: Int,
+    mileage: Double,
+    val batteryCapacity: Double
+) : Car(make, model, year, mileage) {
+
+    override fun details() {
+        super.details()
+        println("Battery Capacity: $batteryCapacity kWh")
+    }
+}
+
+fun main() {
+    var bmw = Car("Japan", "HX125", 2024, 15000.0)
+    bmw.details()
+    bmw.drive(1256.0)
+    bmw.details()
+
+    var tesla = ElectricCar("USA", "Model S", 2024, 12000.0, 100.0)
+    tesla.details()
+    tesla.drive(200.0)
+    tesla.details()
+}
