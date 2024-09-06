@@ -1,0 +1,40 @@
+fun main()
+{
+
+    println("Hello World!")
+    println(true)
+    println(10/9)
+    println(2313.13)
+
+    val immutable="Kotlin"
+    val integer=2913
+    val boolean=true
+
+    val immutableWithType: String="Kotlin"
+    val integerWithType: Int=123456
+    val booleanWithType: Boolean=true
+    println("Printing Immutable Values")
+    println(immutable)
+    println(integer)
+    println(boolean)
+
+
+    var mutable="Kotlin"
+    var integerMutable=134
+    var booleanMutable=true
+
+    println("Printing before changing")
+    println(mutable)
+    println(integerMutable)
+    println(booleanMutable)
+
+    mutable="Satyam"
+    integerMutable=1234
+    booleanMutable=false
+
+    println("Printing after changing")
+    println(mutable)
+    println(integerMutable)
+    println(booleanMutable)
+    
+}
