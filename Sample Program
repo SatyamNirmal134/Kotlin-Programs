@@ -1,0 +1,15 @@
+fun main()
+{
+    val  a=1234
+    val  b=12
+    val c=a+b
+    println("Hello Kotlin")
+    println("Their are $b customers ")
+    val  number=10
+    val mystring="Kotlin"
+    var myMutablestring="Kotlin learning"
+    println(myMutablestring)
+    val Lists=listOf("DSA","DLD","OOPLJL","DM")
+    println(Lists)
+    println("The First Item in the list is-${Lists[1]}")
+}
